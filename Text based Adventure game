@@ -1,0 +1,30 @@
+import time
+count = 'global'
+count = 0
+def introduction():
+    print('intro story')
+    time.sleep(2)
+    print('choices for selection')
+    start = time.time()
+    option = input("enter you choice:")
+    end = time.time() - start
+    endtime = round(end)
+    if endtime <= 7:
+        if option == 'A' or option == 'a':
+            print('a selected')
+            #func_run()
+        elif option == 'B' or option == 'b':
+            print('b selected')
+            #func_call()
+        elif option == 'C' or option == 'c':
+            print('c selected')
+            print('died')
+        else:
+            print('select only from the given options')
+    else:
+        print('Died!!!!, Too long time to think')
+        count += 1
+        introduction()
+        if count >= 3:
+            print('Game over')
+introduction()
