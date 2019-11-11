@@ -1,12 +1,3 @@
-'''
-
-                            Online Python Compiler.
-                Code, Compile, Run and Debug python program online.
-Write your code in this editor and press "Run" button to execute it.
-
-'''
-
-
 import time
 x = 0
 def foo():
@@ -24,10 +15,10 @@ def introduction():
     if endtime <= 7:
         if option == 'A' or option == 'a':
             print('a selected')
-            #func_run()
+            func_run()
         elif option == 'B' or option == 'b':
             print('b selected')
-            #func_call()
+            func_call()
         elif option == 'C' or option == 'c':
             print('c selected')
             print('died')
@@ -41,4 +32,7 @@ def introduction():
             introduction()
         else:
             print('Game Over!!!!!')
+    
+    def func_run():
+    def func_call():
 introduction()
