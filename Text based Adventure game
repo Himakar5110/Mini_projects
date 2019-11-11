@@ -1,7 +1,19 @@
+'''
+
+                            Online Python Compiler.
+                Code, Compile, Run and Debug python program online.
+Write your code in this editor and press "Run" button to execute it.
+
+'''
+
+
 import time
-count = 0
+x = 0
+def foo():
+    global x
+    x += 1
+    print(x,'chances are over')
 def introduction():
-    count = 0
     print('intro story')
     time.sleep(2)
     print('choices for selection')
@@ -23,10 +35,9 @@ def introduction():
             print('select only from the given options')
     else:
         print('Died!!!!, Too long time to think')
-        number = global count
-        number += 1
-        if number < 3:
-            print(number, 'chances over')
+        foo()
+        global x
+        if x < 3:
             introduction()
         else:
             print('Game Over!!!!!')
