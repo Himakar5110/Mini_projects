@@ -1,7 +1,7 @@
 import time
-count = 'global'
 count = 0
 def introduction():
+    count = 0
     print('intro story')
     time.sleep(2)
     print('choices for selection')
@@ -23,8 +23,11 @@ def introduction():
             print('select only from the given options')
     else:
         print('Died!!!!, Too long time to think')
-        count += 1
-        introduction()
-        if count >= 3:
-            print('Game over')
+        number = global count
+        number += 1
+        if number < 3:
+            print(number, 'chances over')
+            introduction()
+        else:
+            print('Game Over!!!!!')
 introduction()
