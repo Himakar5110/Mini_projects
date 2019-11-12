@@ -34,5 +34,6 @@ def introduction():
             print('Game Over!!!!!')
     
     def func_run():
+        "Story for running option"
     def func_call():
 introduction()
