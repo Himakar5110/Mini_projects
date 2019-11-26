@@ -15,9 +15,13 @@ def introduction():
     if endtime <= 7:
         if option == 'A' or option == 'a':
             print('a selected')
+            def func_run():
+                print ('Story for running option')
             func_run()
         elif option == 'B' or option == 'b':
             print('b selected')
+            def func_call():
+                print("Story for call option")
             func_call()
         elif option == 'C' or option == 'c':
             print('c selected')
@@ -32,8 +36,8 @@ def introduction():
             introduction()
         else:
             print('Game Over!!!!!')
-    
     def func_run():
-        "Story for running option"
+        print ('Story for running option')
     def func_call():
+        "Story for call option"
 introduction()
