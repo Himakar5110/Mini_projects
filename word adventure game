@@ -1,0 +1,42 @@
+import time
+x = 0
+def foo():
+    global x
+    x += 1
+    print(x,'chances are over')
+import random
+def wordgame():
+    print('welcome')
+    print('Select severity \n 1.Easy \n 2.Medium \n 3.Hard')
+    severity = int(input('give you option:'))
+    if severity == 1:
+        wordgamelow()
+    elif severity == 2:
+        wordgamemedium()
+    elif severity == 3:
+        wordgamehigh()
+    else:
+        print('Select from given options enter numbers')
+        wordgame()
+    def wordgamelow():
+        start = time.time()
+        option = input("enter you choice:")
+        end = time.time() - start
+        endtime = round(end)
+        if endtime <= 7:
+            print('fine')
+            
+        else:
+            print('Died!!!!, Too long time to think')
+            
+        foo()
+        global x
+        if x < 3:
+            wordgame()
+        else:
+            print('Game Over!!!!!')
+    def wordgamemedium():
+        print('function for wordgamemedium')
+    def wordgamehigh():
+        print('function for wordgamehigh')
+wordgame()
