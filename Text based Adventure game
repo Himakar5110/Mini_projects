@@ -36,8 +36,8 @@ def introduction():
             introduction()
         else:
             print('Game Over!!!!!')
-    def func_run():
+    #def func_run():
         print ('Story for running option')
-    def func_call():
+    #def func_call():
         "Story for call option"
 introduction()
